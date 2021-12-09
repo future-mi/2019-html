@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>06_imagesmap</title>
+</head>
+
+<body>
+<!--usemap은 맵의 이름을 사용한다는 것-->
+    <img src="images/bigdata_usemap.png" alt="빅데이터" usemap="#buy_link">
+    <!--   내가 사진에서의 원하는 부분을 좌표값을 설정해서 원하는 링크에 들어갈 수 있도록
+맵의 이름 먼저 / area 탭키 / shape 어떤 모양 사각(rect),원 등 / coords 는 좌표/ href는 경로 -->
+    <map name="buy_link">
+        <!--ex) 사각형은 왼쪽 상단 그리고 오른쪽 하단 / coords에 36,26은 x와 y값이므로 36,26,431,568은 x36,y26이랑 x431,y568을 의미하고 있음-->
+<!--그림판 사용하면 코드 잡기 편함 / 이미지 사이즈가 달라지면 코드도  달라짐-->
+        <area shape="rect" coords="36,26,431,568" href="http://www.naver.com" alt="" target="_blank">
+        <area shape="rect" coords="361,673,499,708" href="http://www.interpark.com" alt="" target="_blank">
+        <area shape="rect" coords="524,673,619,709" href="http://www.yes24.com" alt="" target="_blank">
+
+
+    </map>
+
+
+
+
+</body></html>
