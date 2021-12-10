@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>04_radio-button</title>
+</head>
+<!--라디오버튼은 많이쓰는 태그 ctrl+d 하면 열복사
+라디오버튼은 중복선택이 안됨
+같은 name으로 묶여있으면 같은 범주 안에 있다는 내용임 무조건 name 써야함-->
+
+<body>
+    <p>좋아하는 장르를 선택해주세요</p>
+    <p>
+        <input type="radio" name="music">락
+        <input type="radio" name="music">팝
+        <input type="radio" name="music">재즈
+    </p>
+
+    <br>
+    <!--lavel태그 사용하면 글씨 위를 클릭해도 선택이 됨-->
+
+    <p>좋아하는 장르를 선택해주세요</p>
+    <p>
+        <label><input type="radio" name="music">락</label>
+        <label><input type="radio" name="music">팝</label>
+        <label><input type="radio" name="music">재즈</label>
+    </p>
+
+    <br>
+    <!--label for에 연결하는건 id값-->
+    <h3>label for</h3>
+    <p><label for="user-id">아이디</label>
+        <input type="text" id="user-id">
+    </p>
+
+    <p><label for="pw">비밀번호</label>
+        <input type="password" id="pw">
+    </p>
+
+</body>
+
+</html>

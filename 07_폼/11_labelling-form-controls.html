@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>11_labelling-form-controls</title>
+</head>
+<!--라디오버튼은 동그라미 버튼-한개만 선택가능 / id로 묶을 수 있음. 
+-->
+
+<body>
+    <p>
+        주문상품 :
+        <label><input type="radio" name="furniture">책상</label>
+        <label><input type="radio" name="furniture">의자</label>
+        <label><input type="radio" name="furniture">침대</label>
+        <label><input type="radio" name="furniture">테이블</label>
+    </p>
+<!--인풋타입에 넘버를 넣으면 숫자를 넣을 수 있음 / value는 초기값을 의미/min과 max는 최솟값 최댓값을 의미함
+   step은 증가되거나 감소되는 수의 폭임-->
+    <p>
+        주문수량 : <input type="number" value="2" min="2" max="10" step="2">
+<!--
+   min:최소수량, max: 최대수량, step:화살표를 눌렀을때 증가/감소되는 수, value:초기값-->
+    </p>
+
+
+
+</body></html>

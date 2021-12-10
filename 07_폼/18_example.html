@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>18_example</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>상세정보</legend>
+        <p>이름 : <input type="text"></p>
+        <p>이메일: <input type="email" placeholder="이메일을 입력하세요."></p>
+        <p>비밀번호 : <input type="password"></p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <!--select id랑name은 생략 가능
+       option에서의 value는 서버로 전송되는 이름이라 영어로 써야함-->
+        <legend>리뷰</legend>
+        <p>이 사이트를 알게 된 경위는?&nbsp;&nbsp;&nbsp;
+            <select>
+                <option value="goole">구글</option>
+                <option value="naver">네이버</option>
+                <option value="daum">다음</option>
+            </select>
+        </p>
+
+        <p>다시 방문 하시겠습니까?</p>
+        <label><input type="radio" id="site">네</label>
+        <label><input type="radio" id="site">아니오</label>
+        <label><input type="radio" id="site">모르겠음 </label>
+
+
+        <p>의견: <br><textarea cols="30" rows="3"></textarea></p>
+
+
+        <p><input type="checkbox" checked>이메일 업데이트에 가입</p>
+        <p><input type="submit" value="리뷰전송"></p>
+
+    </fieldset>
+    <!---->
+
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>19_example_2</title>
+</head>
+<!--text나 password는 size를 넣어서 칸 사이즈 조정이 가능함!-->
+
+<body>
+    <h1>상품주문서</h1>
+    <!--label태그를 쓴것과 안쓴것의 차이는 한글을 눌렀을 때 커서가 활성화 되는지 안되는지의 차이
+    회색으로 만드는것은 사용 할 수 없다는 의미임(회원 가입 후 아이디 수정 안되는것과 같은 의미(disabled)
+    autofocus는 자동 포커스 required 필수입력 값
+    readonly는 단지 읽기만 하는 부분으로 만드는것(ex 약관이라던지 계약서 내용 등을 넣고 이걸로 쓰는걸 막으면됨)-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li><label>이름 <input type="text" placeholder="여백없이 입력" disabled></label></li>
+                <li>연락처 <input type="tel" placeholder="연락가능한 번호" autofocus required></li>
+            </ul>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>주소 <input type="text" size="30"></li>
+                <li>전화 <input type="tel"></li>
+                <li>메모 <textarea cols="40" rows="3" readonly>메모를 확인하세요</textarea></li>
+
+            </ul>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li><label>아이디: <input type="text"></label></li>
+                <li><label><input type="checkbox">과테말라 안티구아 (100g) <input type="number" value="1" min="0" max="5">개</label></li>
+                <li><label><input type="checkbox">인도네시아 만델링 (100g) <input type="number" value="1" min="0" max="5">개</label></li>
+                <li><label><input type="checkbox">탐나는도다(블렌딩) (100g) <input type="number" value="1" min="0" max="5">개</label></li>
+
+            </ul>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="재작성">
+    </form>
+</body></html>
+
+
+<!--재작성은 reset 하는것 초기화시키기 -->
