@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>example2</title>
+</head>
+<!--figcaption 테이블의 제목을 caption  > 테이블에 대한 설명 / 병합은 첫번째 줄을 기준으로 함
+rowspan colspan을 구분해서 잘 사용해보기
+thead 테이블의 서론 / tbody 본론 / tfoot 결론 셀 테두리를 병합
+
+border-collapse는 테두리를 병합한다라는 뜻임 > 가장자리와 안쪽셀 보더가 합쳐짐 그리고마지막에 ; 넣어주기 -->
+
+<body>
+
+    <table border="2" cellpadding="5" style="border-collapse: collapse;">
+        <caption>객실요금표</caption>
+        <thead>
+            <tr bgcolor="yellowgreen">
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th>유채방</th>
+                <td>여성도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000원</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">동백방</th>
+                <td>남성도미토리</td>
+
+            </tr>
+
+            <tr>
+                <td>가족 1팀</td>
+            </tr>
+
+            <tr>
+                <th>천혜향방</th>
+                <td>-</td>
+                <td>2인실</td>
+
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr bgcolor="yellowgreen">
+                <th colspan="4">바깥채 전체를 렌트합니다.</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</body></html>
